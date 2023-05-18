@@ -1,0 +1,33 @@
+<!-- <app-information [data]="data" (dataSend)="dataSend($event)"></app-information>
+
+Calendar Here -->
+<!-- <h1 class="d-flex ">Small Calendar</h1> --> 
+<div class="container">
+<table class="table table-sm table-bordered table-striped text-center">
+	<thead>
+		<tr>
+			<th scope="col">
+				Id
+			</th>
+			<th scope="col">
+				Name
+			</th>
+			<th scope="col">
+				Price
+			</th>
+		</tr>
+	</thead>
+	<tbody cdkDropList (cdkDropListDropped)="drop($event)">
+		<tr cdkDrag  *ngFor="let data of dataSource">
+			<td>{{data.id}}</td>
+			<td>{{data.name}}</td>
+			<td>{{data.price}}</td>
+
+			<!-- Preview -->
+			<!-- <div *cdkDragPreview matchSize="true" class="container dragdrop-placeholder">
+				{{data.name}}
+			</div> -->
+		</tr>
+	</tbody>
+</table>
+</div>

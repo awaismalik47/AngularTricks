@@ -1,0 +1,18 @@
+
+.custom-border:hover{
+    border: 1px solid rgb(141, 140, 140);
+    width: 100%;
+    border-radius: 5px;
+    background-color: bisque;
+}
+td,th{
+    width: 500px;
+}
+tr{
+    box-shadow: none;
+    border-bottom-width: 0;
+}
+input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 5px;
+  }

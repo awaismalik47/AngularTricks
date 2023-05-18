@@ -1,0 +1,184 @@
+
+.custom-gap{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.container-custom{
+
+}
+.left-container{
+    min-width: 80%;
+}
+
+
+
+  .custom-gap-10{
+    column-gap: 10px ;
+    
+  }
+
+  .small-img{
+width: 186px;
+height: 117px;
+  }
+
+  .right-container{
+   
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .container-small{
+    
+    width: 150px;
+    
+  }
+
+
+  .slide-image-container {
+    height: 500px;
+     width: 800px;
+     overflow: hidden;
+   }
+   
+   .slide-image-container img {
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+     max-width: 100%;
+   }
+   
+   .felx-custom{
+display: flex;
+column-gap: 10px;
+   }
+   ::ng-deep .carousel-control-prev, ::ng-deep .carousel-control-next {
+   
+    display: none;
+  }
+  
+
+
+  /* css of select Box*/
+  .select-box {
+    margin-left: 100px;
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 10px;
+    width: 200px;
+  }
+  
+  .select-box select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    color: #333;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .select-box::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #333;
+    pointer-events: none;
+  }
+  
+  .select-box select:focus {
+    outline: none;
+  }
+  
+  .select-box::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+   
+  }
+
+  /* css radio button */
+  /* Customize the radio button appearance */
+.custom-radio-button {
+  display: inline-block;
+  position: relative;
+  padding-left: 28px;
+  margin-right: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+}
+
+.custom-radio-button input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Style the radio button */
+.radio-item {
+  display: inline-block;
+  position: relative;
+  padding: 0 6px;
+  margin: 10px 0 0;
+}
+
+.radio-item input[type='radio'] {
+  display: none;
+}
+
+.radio-item label {
+  color: #000000;
+  font-weight: normal;
+}
+
+.radio-item label:before {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  margin: 0 5px 0 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 11px;
+  border: 2px solid #0bea61;
+  background-color: transparent;
+}
+
+.radio-item input[type=radio]:checked + label:after {
+  border-radius: 11px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  content: " ";
+  display: block;
+  background: rgb(0, 255, 8);
+} */
+
+
+
+
+/* \container */
+.custom-container {
+  width: calc(100% - 40px); /* Subtract 40px from 100% */
+  border: 1px solid red;
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.custom-content {
+  border: 1px solid green;
+  text-align: center; /* Center the content inside the container */
+}
