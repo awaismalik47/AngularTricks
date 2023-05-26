@@ -31,3 +31,49 @@ Calendar Here -->
 	</tbody>
 </table>
 </div>
+
+
+<!-- customized Time box with drop down -->
+
+<input type="date"  value="12:00" (change)="handleDateTimeChange($event.target.value)">
+
+<!-- <ngx-material-timepicker #picker></ngx-material-timepicker> -->
+
+<!-- chat Gpt custom -->
+
+<!-- Gmail like input Field -->
+
+<!-- input type='checkbox' [(ngModel)]="checkboxValue" class='checkbox'>
+<div class="custom-checkbox">
+  <div class="checkmark"></div>
+</div>< -->
+
+<!-- Meeting Mode -->
+<div class="mainBox">
+	<div class="meeting-Mode">
+<div class="outerbox" [class.backgroundGreen]="selectedItem === 'virtual'" [class.background]="selectedItem" (click)="meetingMode('virtual')">
+	<img *ngIf="selectedItem !== 'virtual'" src="assets/images/virtualMind.svg">
+	 <!--second Img  -->
+	 <img *ngIf="selectedItem === 'virtual'" src="assets/images/VirtualmindWhite.svg">
+	<p>Physical</p>
+</div>
+<div class="outerbox" [class.backgroundGreen]="selectedItem === 'inPerson'" (click)="meetingMode('inPerson')">
+	<img *ngIf="selectedItem !== 'inPerson'" src="assets/images/VirtualmindWhite.svg"> 
+	<!-- second Img -->
+	<img *ngIf="selectedItem === 'inPerson'" src="assets/images/virtualMind.svg">
+<P>Virtual</P>
+</div>
+</div>
+<div *ngIf="URl" class="input-field">
+	<p>Meeting URl</p>
+	<input   type="text" id="input-field" [class.hidden]="inputHidden">
+</div>
+
+<!-- two Input field -->
+<div *ngIf="country"  class="input-field">
+	<p>Location</p>
+	<input   type="text">
+	<p>Country</p>
+	<input   type="text">
+</div>
+</div>

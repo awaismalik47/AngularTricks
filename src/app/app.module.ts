@@ -4,7 +4,7 @@ import {HttpClientModule} from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CandidateComponent } from './candidate/candidate.component';
 import { JobComponent } from './job/job.component';
 import { InformationComponent } from './information/information.component';
@@ -14,6 +14,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import {MatTableModule} from '@angular/material/table';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import {DragDropModule} from '@angular/cdk/drag-drop';
+import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
 
 
 @NgModule({
@@ -35,6 +36,8 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     DragDropModule,
     BrowserAnimationsModule,
     CarouselModule.forRoot(),
+    NgxMaterialTimepickerModule,
+    FormsModule
   ],
    
   providers: [],
