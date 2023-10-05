@@ -20,7 +20,7 @@ import daygridPlugin from '@fullcalendar/daygrid';
 import { MatSelectModule } from '@angular/material/select';
 import { TodolistComponent } from './components/todolist/todolist.component';
 import { CreateTodoComponent } from './dialogs/create-todo/create-todo.component';
-
+import { MatDialogModule } from '@angular/material/dialog';
 
 FullCalendarModule.registerPlugins([
   interactionPlugin,
@@ -48,7 +48,7 @@ FullCalendarModule.registerPlugins([
     NgxMaterialTimepickerModule,
     MatSelectModule,
     FormsModule,
-  
+    MatDialogModule
 
    
   ],

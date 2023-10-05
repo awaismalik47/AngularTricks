@@ -1,4 +1,6 @@
+import { CreateTodoComponent } from './../../dialogs/create-todo/create-todo.component';
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-todolist',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodolistComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
 
+  openDialog(): void {
+    const dialogRef = this.dialog.open(CreateTodoComponent, {
+   
+      
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+      
+    });
+  }
 }
