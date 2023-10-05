@@ -11,5 +11,5 @@ export class CreateTodoComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  data
 }

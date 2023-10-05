@@ -25,6 +25,11 @@ export class TodolistComponent implements OnInit {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(CreateTodoComponent, {
+      
+        height: '80%',
+        width: '100%',
+      
+      
     });
 
     dialogRef.afterClosed().subscribe(result => {
