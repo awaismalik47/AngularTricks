@@ -3,26 +3,13 @@
 <form>
     <fieldset class="todo-list">
       <legend class="todo-list__title">Todo List</legend>
-      <label class="todo-list__label">
+      <label class="todo-list__label" *ngFor = "let task of tasksArray">
         <input type="checkbox" name="" id="" />
         <i class="check"></i>
-        <span>Attend meeting</span>
-      </label>
-      <label class="todo-list__label">
-        <input type="checkbox" name="" id="" />
-        <i class="check"></i>
-        <span>Complete Assignment</span>
-      </label>
-      <label class="todo-list__label">
-        <input type="checkbox" name="" id="" />
-        <i class="check"></i>
-        <span>Finish design for new website</span>
-      </label>
-      <label class="todo-list__label">
-        <input type="checkbox" name="" id="" />
-        <i class="check"></i>
-        <span>Go to gym</span>
+        <span>{{task.taskName}}</span>
       </label>
     </fieldset>
   </form>
 <button (click)="openDialog()">Open</button>
+
+

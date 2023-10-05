@@ -9,6 +9,15 @@ import { MatDialog } from '@angular/material/dialog';
 })
 export class TodolistComponent implements OnInit {
 
+  tasksArray = [{
+    taskName: 'DB Assignment',
+    assignedDate: 12-2-2013,
+    dueDate: 11-2-3323,
+    description: 'Hello'
+  }]
+
+  // tasksArray = [];
+
   constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
@@ -16,8 +25,6 @@ export class TodolistComponent implements OnInit {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(CreateTodoComponent, {
-   
-      
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -25,4 +32,5 @@ export class TodolistComponent implements OnInit {
       
     });
   }
+
 }
