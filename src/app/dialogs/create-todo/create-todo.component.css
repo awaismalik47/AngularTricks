@@ -28,3 +28,7 @@ input[type=text], select {
     background-color: #f2f2f2;
     padding: 20px;
   }
+  .textArea{
+    width: 100%;
+    min-height: 150px;
+  }
