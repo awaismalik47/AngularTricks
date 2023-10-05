@@ -1,5 +1,20 @@
-<h2 mat-dialog-title>Delete all</h2>
-<mat-dialog-content>Are you sure?</mat-dialog-content>
+<h2 mat-dialog-title>Create New Task</h2>
+<!-- <mat-dialog-content>Are you sure?</mat-dialog-content> -->
+<div mat-dialog-content>
+    <H1>Task Name</H1>
+    <div>
+      <form action="/action_page.php">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <h1>Date</h1>
+        <input id="fname" type="date">
+    
+        <h1>Description</h1>
+        <textarea></textarea>
+      </form>
+    </div>
+    <!-- category section -->
+  
+  </div>
 <mat-dialog-actions>
   <button mat-button mat-dialog-close>No</button>
   <!-- The mat-dialog-close directive optionally accepts a value as a result for the dialog. -->
